@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree", serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(47, 88%, 63%);
+  font-size: 16px;
+}
+
+.main {
+  width: 280px;
+  height: 440px;
+  border: 2px solid hsl(0, 0%, 7%);
+  border-radius: 12px;
+  margin: 120px auto;
+  box-shadow: 12px 12px 0 0 rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.img_div {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.cover_img {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.8s ease;
+}
+
+.cover_img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.about {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  padding: 8px 16px;
+  background-color: hsl(47, 88%, 63%);
+  width: fit-content;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.pub_date {
+  font-size: 12px;
+}
+
+.heading {
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 900;
+  transition: width 0.3s ease;
+}
+
+.heading:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.subheading {
+  font-size: 12px;
+}
+
+.tutor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tutor img {
+  width: 32px;
+}
+
+.tutor p {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 528px) {
+  .main {
+    width: 260px;
+    height: 400px;
+  }
+}
